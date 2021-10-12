@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>EVIR</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">EVIR</a>
+            <ul>
+                <li><a href="#" class="active">TRANG CHỦ</a></li>
+                <li><a href="#noidung2">ĐỀ TÀI</a></li>
+                <li><a href="#phan3">TIN TỨC</a></li>
+                <li><a href="#final">LIÊN HỆ</a></li>
+            </ul>
+    </header>
+    
+    <section>
+        <img src="image/jungle cover.jpg" id="cover">
+        <img src="image/behind-04.png" id="nuibehind">
+        <img src="image/nui2-02.png" id="nui2">
+        <img src="image/sun-03.png" id="sun">
+        <h2 id="text"><b>TIẾNG NÓI CỦA RỪNG</b></h2>
+        <a href="#noidung2" id="btn">Read more</a>
+        <img src="image/nui-01.png" id="nui1">
+        
+    </section>
+    
+    <script>
+        let nuibehind=document.getElementById('nuibehind');
+        let nui2=document.getElementById('nui2');
+        let sun=document.getElementById('sun');
+        let text=document.getElementById('text');
+        let btn=document.getElementById('btn');
+        let nui1=document.getElementById('nui1');
+        let header=document.querySelector('header');
+        
+        window.addEventListener('scroll', function(){
+            let value=window.scrollY;
+            nuibehind.style.left = value * 0.25 + 'px';
+            sun.style.top = value * 1.05 + 'px';
+            nui2.style.left = value * 0.5 + 'px';
+            nui1.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            btn.style.marginTop = value * 1.05 + 'px';
+            header.style.top = value * 0.5  + 'px';
+        })
+    </script>
+    
+   <div class="noidung2" id="noidung2">
+       
+        <div class="title" align="center" style="padding-bottom: : 50px">
+            <h3>ĐỪNG PHÁ HỦY RỪNG, HÃY BẢO VỆ VÀ PHÁT TRIỂN</h3>
+       </div>
+    <div class="noidung2a">    
+        <div class="part">
+            <h4 align="center">Rừng vẫn được xem là nguồn tài nguyên thiên nhiên lưu trữ một lượng gỗ lớn của đất nước cũng như giúp ngăn ngừa các hiện tượng của tự nhiên như <br>thiên tai, bão lũ, sạt lở đất, cát lấn.<br><br>Rừng ở đây được hiểu là một quần thể cây cối sinh sống, <br>nảy nở trên một vùng đất rộng lớn,<br> cao hơn so với đồng bằng. </h4>
+        </div>
+        <div class="part">
+            <h4 align="center">Hằng ngày chúng ta hít vào khí O2 và thải ra khí CO2. Và nơi cung cấp khí O2 chính là cây xanh. <br><br>Cây xanh giúp lọc khí bẩn, điều hòa môi trường, mang lại sự trong lành cho con người.<br><br>Bởi vậy mới có câu nói "Rừng là lá phổi xanh của nhân loại".</h4>
+        </div>
+        <div class="part">
+            <h4>Rừng được tạo nên từ cây, hàng nghìn, hàng vạn cây mọc san sát nhau.<br><br> Lượng khí O2 mà rừng cung cấp hằng năm nhiều khi chưa đủ cho loài người.<br><br> Tuy nhiên khi rừng vẫn được bảo vệ thì cuộc sống con người vẫn được bảo vệ.</h4>
+        </div>
+    </div>
+    </div>
+<div class="phan3" id="phan3">
+    <div class="mot">EVIR</div>
+</div>
+<div class="detail" align="center">
+    <h4>Hệ thống bảo tồn, phát triển thiên nhiên (động vật, thực vật, hệ sinh thái tự nhiên) hàng đầu Việt Nam. <br>Nơi thiên nhiên được bảo vệ toàn diện từng nhịp thở của rừng xanh.</h4>
+</div>
+<div class="final" id="final">
+    26 Trần Hưng Đạo, Phường 9, Quận 5, Tp.HCM
+    <br>Copyright 2021
+    <br>Tel: 028 123456
+
+</div>
+</html>
